@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ReSAKSS Country eAtlases (RCeA) | Africa Open Data</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="msapplication-TileColor" content="#e8912e">
+        <meta name="theme-color" content="#e8912e" />
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+        <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32"/>
+        <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Advanced Data Exploration Tool to Enhance Country Data and Knowledge Management in Africa">
+        <meta name="author" content="The ReSAKSS Country eAtlases">
+        <meta name="keywords" content="Open data, Africa eatlas, Disaggregated data, open data for africa, GIS data, africa download data, district data, region data" />
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="assets/css/select2.css">
+        <link rel="stylesheet" href="assets/css/helpers.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- CSSMap STYLESHEET - AFRICA -->
+        <link rel="stylesheet" type="text/css" href="cssmap-africa/cssmap-africa.css" media="screen" />
+        <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+
+
+        <style>
+
+        .probootstrap-section-heading
+        {
+
+            color:#89a527!important;
+                    }
+        </style>
+
+        <!-- All Around Slider -->
+        <link href="http://eatlas.resakss.org/content_slider/fonts/ostrich_sans/stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="http://eatlas.resakss.org/content_slider/css/content_slider_style.css" rel="stylesheet" type="text/css" /> 
+        
+        <style>
+        
+        /* Grow */
+.grow
+{
+       -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+} 
+
+.grow:hover
+{
+       -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(1);
+} 
+ 
+.opac:hover
+{
+    
+     background: #f9ffe0 !important;
+    box-shadow: 1px 1px #d6dfb2, 2px 2px #d6dfb2, 3px 3px #d6dfb2;
+    transform: translateX(-3px);
+}
+</style>
+        
+<style>
+        
+a.button {
+  position: relative;
+  display: inline-block;
+  width: 25.6em;
+  height: 6.3em;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: left;
+  text-decoration: none;
+  line-height: 3em;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+a.button svg {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+a.button svg g line,
+a.button svg g polyline,
+a.button svg g circle {
+  fill: none;
+  stroke: #f29c33;
+}
+a.button svg g line,
+a.button svg g polyline {
+  stroke-miterlimit: 10;
+}
+a.button svg g circle {
+  display: block;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 0.066em;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset ease-out 0.5s;
+}
+a.button font {
+  z-index: 2;
+  position: relative;
+  bottom: 5px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color:#3788af;
+    
+}
+a.button:hover {
+  -webkit-transform: translateZ(0) translateX(0.5em);
+          transform: translateZ(0) translateX(0.5em);
+}
+a.button:hover svg g circle {
+  stroke-dashoffset: 200;
+}
+  
+    
+    
+.content_slider_text_block_wrap a {
+    color: #f29c33 !important;
+    font-size: 19px !important;
+    }
+    
+.content_slider_text_block_wrap h3 {
+    font-size: 22px !important;
+    font-weight: normal !important;
+    }
+</style>
+    </head>
+	
+    <body style="background:#3B4835 !important">
+  
+
+    <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar" id="probootstrap-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="http://eatlas.resakss.org" ><img src="assets/images/logo-760.png" style="width:250px;height:55px;border:1px solid grey; "/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-menu" aria-controls="probootstrap-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="ion-navicon"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="probootstrap-menu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#guide">Guide</a></li>
+            <li class="nav-item"><a class="nav-link" href="http://eatlas.resakss.org/teams.html">Team</a></li>
+             <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="" href="#"><!--<img src="assets/images/fr.png"/>-->English</a>
+                <!--<a style="margin-left:1.5px;" class="" href="#"><img src="assets/images/us.png"/></a>
+                -->
+            </li> 
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+    
+
+    <section class="probootstrap-cover overflow-hidden relative"  style="background-image: url('assets/images/1.jpg');height:712px !important;" data-stellar-background-ratio="0.5"  id="section-home">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md">
+            <h2 class="heading mb-2 display-4 font-light probootstrap-animate">The ReSAKSS Country eAtlases (RCeA)</h2>
+            <p class="lead mb-5 probootstrap-animate">
+              
+
+            </p>
+<!--
+             <p class="btn btn-primary p-3 mr-3 pl-5 pr-5 text-uppercase d-lg-inline d-md-inline d-sm-block d-block mb-3">ReSAKSS Country eAtlases (RCeA)
+            </p>
+-->
+          </div> 
+          <div class="col-md probootstrap-animate">
+
+                <!-- CSSMap - Africa -->
+<div id="map-africa">
+ <ul class="africa">
+  <!--<li class="afr1"><a href="#algeria">Algeria</a></li>-->
+  <!--<li class="afr2"><a href="#angola">Angola</a></li>-->
+  <li class="afr3"><a href="#benin">Benin</a></li>
+  <!--<li class="afr4"><a href="#botswana">Botswana</a></li>-->
+  <li class="afr5"><a href="#burkina-faso">Burkina Faso</a></li>
+  <li class="afr6"><a href="#burundi">Burundi</a></li>
+  <li class="afr7"><a href="#cameroon">Cameroon</a></li>
+  <!--<li class="afr8"><a href="#cape-verde" class="tooltip-middle">Cape Verde <small>(Portugal)</small></a></li>-->
+
+  <!--<li class="afr10"><a href="#central-african-republic">Central African Republic</a></li>-->
+ <!-- <li class="afr11"><a href="#chad">Chad</a></li>-->
+ <!-- <li class="afr12"><a href="#comoros" class="tooltip-middle">Comoros</a></li>-->
+ <!--  <li class="afr13"><a href="#congo">Congo</a></li>-->
+  <li class="afr14"><a href="#cote-d-ivoire">Côte d'Ivoire</a></li>
+  <li class="afr15"><a href="#democratic-republic-of-the-congo">Democratic Republic of the Congo</a></li>
+  <!--<li class="afr16"><a href="#djibouti">Djibouti</a></li>-->
+  <!--<li class="afr17"><a href="#egypt">Egypt</a></li>-->
+  <!--<li class="afr18"><a href="#equatorial-guinea">Equatorial Guinea</a></li>-->
+  <!--<li class="afr19"><a href="#eritrea">Eritrea</a></li>-->
+  <li class="afr20"><a href="#ethiopia">Ethiopia</a></li>
+  <!--<li class="afr21"><a href="#gabon">Gabon</a></li>-->
+  <!--<li class="afr22"><a href="#gambia">Gambia</a></li>-->
+  <li class="afr23"><a href="#ghana">Ghana</a></li>
+  <!--<li class="afr24"><a href="#guinea">Guinea</a></li>-->
+  <!--<li class="afr25"><a href="#guinea-bisaau">Guinea-Bisaau</a></li>-->
+  <li class="afr26"><a href="#kenya">Kenya</a></li>
+  <!--<li class="afr27"><a href="#lesotho">Lesotho</a></li>-->
+  <!--<li class="afr28"><a href="#liberia">Liberia</a></li>-->
+  <!--<li class="afr29"><a href="#libya">Libya</a></li>-->
+  <!--<li class="afr30"><a href="#madagascar">Madagascar</a></li>-->
+ 
+  <li class="afr32"><a href="#malawi">Malawi</a></li>
+  <li class="afr33"><a href="#mali">Mali</a></li>
+  <!--<li class="afr34"><a href="#mauritania">Mauritania</a></li>-->
+  <!--<li class="afr35"><a href="#mauritius">Mauritius</a></li>-->
+  <!--<li class="afr36"><a href="#mayotte">Mayotte <small>(France)</small></a></li>-->
+  <!--<li class="afr37"><a href="#morocco">Morocco</a></li>-->
+  <li class="afr38"><a href="#mozambique">Mozambique</a></li>
+  <!--<li class="afr39"><a href="#namibia">Namibia</a></li>-->
+  <li class="afr40"><a href="#niger">Niger</a></li>
+  <li class="afr41"><a href="#nigeria">Nigeria</a></li>
+  <!--<li class="afr42"><a href="#reunion">Réunion <small>(France)</small></a></li>-->
+  <li class="afr43"><a href="#rwanda">Rwanda</a></li>
+ <!-- <li class="afr44"><a href="#sahrawi-arab-democratic-republic">Sahrawi Arab Democratic Republic</a></li>-->
+ <!-- <li class="afr45"><a href="#sao-tome-and-principe" class="tooltip-middle">São Tomé and Príncipe</a></li>-->
+  <li class="afr46"><a href="sss.com">Senegal</a></li>
+  <!--<li class="afr47"><a href="#seychelles" class="tooltip-middle">Seychelles</a></li>-->
+ <!-- <li class="afr48"><a href="#sierra-leone">Sierra Leone</a></li>
+  <li class="afr49"><a href="#somalia">Somalia</a></li>
+  <li class="afr50"><a href="#somaliland">Somaliland</a></li>
+  <li class="afr51"><a href="#south-africa">South Africa</a></li>-->
+  <li class="afr52"><a href="#south-sudan">South Sudan</a></li>
+ <!--  <li class="afr53"><a href="#sudan">Sudan</a></li>-->
+  <!-- <li class="afr54"><a href="#swaziland">Swaziland</a></li>-->
+  <li class="afr55"><a href="#togo">Togo</a></li>
+  <li class="afr56"><a href="#tunisia">Tunisia</a></li>
+  <li class="afr57"><a href="#uganda">Uganda</a></li>
+  <li class="afr58"><a href="#united-republic-of-tanzania">Tanzania</a></li>
+  <li class="afr59"><a href="#zambia">Zambia</a></li>
+ <!--  <li class="afr60"><a href="#zimbabwe">Zimbabwe</a></li>-->
+ </ul>
+</div>
+<!-- END OF THE CSSMap - Africa -->
+          </div>
+        </div>
+      </div>
+    
+    </section>
+    <!-- END section -->
+    
+        <!-- Gradient -->
+        
+        <div class="gradient" style="    background: linear-gradient(0deg, #3B4835, rgba(0, 0, 0, .0) 25%, rgba(0, 0, 0, .5));
+    bottom: 0;
+    height: 712px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%">
+        
+        
+        </div>
+        
+        
+        
+        <!-- End gradient -->
+        
+        
+<!-- Content Slider -->
+        
+<div class="content_slider_wrapper margin-top12" id="slider1">
+																																												<div class="circle_slider_text_wrapper" id="sw0" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Bénin</h3><br /><br />
+<span class="interactivemaps" ><a href="Benin/en">Launch Interactive Maps</a></span><br /><br /></div>	
+</div>
+		
+													
+																																												<div class="circle_slider_text_wrapper" id="sw1" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Burkina Faso</h3><br /><br />
+<span class="interactivemaps" ><a href="Burkina-faso/en">Launch Interactive Maps</a></span><br /><br /></div>	
+</div>
+													
+																																												<div class="circle_slider_text_wrapper" id="sw2" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Burundi</h3><br /><br />
+<span class="interactivemaps" ><a href="Burundi/en">Launch Interactive Maps</a></span><br /><br /></div>				</div>
+													
+																																												<div class="circle_slider_text_wrapper" id="sw3" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Cameroon</h3><br /><br />
+<span class="interactivemaps" ><a href="Cameroon/en">Launch Interactive Maps</a></span><br /><br /></div>	
+</div>
+													
+																																												<div class="circle_slider_text_wrapper" id="sw4" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>D.R Congo</h3><br /><br />
+<span class="interactivemaps" ><a href="D.R-Congo/en">Launch Interactive Maps</a></span><br /><br /></div>	
+</div>
+													
+																																												<div class="circle_slider_text_wrapper" id="sw5" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Ethiopia</h3><br /><br />
+<span class="interactivemaps" ><a href="Ethiopia/en">Launch Interactive Maps</a></span><br /><br /></div>	
+</div>
+													
+																																												<div class="circle_slider_text_wrapper" id="sw6" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Ghana</h3><br /><br />
+<span class="interactivemaps" ><a href="Ghana/en">Launch Interactive Maps</a></span><br /><br /></div>	
+</div>
+													
+																																												<div class="circle_slider_text_wrapper" id="sw7" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Côte d'Ivoire</h3><br /><br />
+<span class="interactivemaps" ><a href="civ/en">Launch Interactive Maps</a></span><br /><br /></div>	
+</div>
+													
+																																												<div class="circle_slider_text_wrapper" id="sw8" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Kenya</h3><br /><br />
+<span class="interactivemaps" ><a href="Kenya/en">Launch Interactive Maps</a></span><br /><br /></div>	
+</div>
+													
+																																												<div class="circle_slider_text_wrapper" id="sw9" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Malawi</h3><br /><br />
+<span class="interactivemaps" ><a href="Malawi/en">Launch Interactive Maps</a></span><br /><br />
+</div>	
+</div>
+													
+																																												<div class="circle_slider_text_wrapper" id="sw10" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Mali</h3><br /><br />
+<span class="interactivemaps" ><a href="Mali/en">Launch Interactive Maps</a></span><br /><br />
+</div>	
+</div>
+													
+																																												<div class="circle_slider_text_wrapper" id="sw11" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Mozambique</h3><br /><br />
+<span class="interactivemaps" ><a href="Mozambique/en">Launch Interactive Maps</a></span><br /><br /></div>	
+</div>
+													
+																																												<div class="circle_slider_text_wrapper" id="sw12" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Niger</h3><br /><br />
+<span class="interactivemaps" ><a href="Niger/en">Launch Interactive Maps</a></span><br /><br /></div>	
+</div>
+													
+																																												<div class="circle_slider_text_wrapper" id="sw13" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Nigeria</h3><br /><br />
+<span class="interactivemaps" ><a href="Nigeria/en">Launch Interactive Maps</a></span><br /><br /></div>	
+</div>
+													
+																																												<div class="circle_slider_text_wrapper" id="sw14" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Rwanda</h3><br /><br />
+<span class="interactivemaps" ><a href="Rwanda/en">Launch Interactive Maps</a></span><br /><br /></div>	
+</div>
+													
+																																												<div class="circle_slider_text_wrapper" id="sw15" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Senegal</h3><br /><br />
+<span class="interactivemaps" ><a href="Senegal/en">Launch Interactive Maps</a></span><br /><br /></div>	
+</div>
+													
+																																												<div class="circle_slider_text_wrapper" id="sw16" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Tanzania</h3><br /><br />
+<span class="interactivemaps" ><a href="Tanzania/en">Launch Interactive Maps</a></span><br /><br /></div>	
+</div>													
+																																								<div class="circle_slider_text_wrapper" id="sw17" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Togo</h3><br /><br />
+<span class="interactivemaps" ><a href="Togo/en">Launch Interactive Maps</a></span><br /><br /></div>	
+</div>													
+																																<div class="circle_slider_text_wrapper" id="sw18" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Tunisia</h3><br /><br />
+<span class="interactivemaps" ><a href="Tunisia/en">Launch Interactive Maps</a></span><br /><br /></div>	
+</div>
+													
+																																												<div class="circle_slider_text_wrapper" id="sw19" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Uganda</h3><br /><br />
+<span class="interactivemaps" ><a href="Uganda/en">Launch Interactive Maps</a></span><br /><br />
+</div>	
+</div>
+													
+																																												<div class="circle_slider_text_wrapper" id="sw20" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Zambia</h3><br /><br />
+<span class="interactivemaps" ><a href="Zambia/en">Launch Interactive Maps</a></span><br /><br /></div>	
+</div>
+													
+																																												<div class="circle_slider_text_wrapper" id="sw21" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>South Sudan</h3><br /><br />
+<span class="interactivemaps" ><a href="South-Sudan/en">Launch Interactive Maps</a></span><br /><br /></div>	
+</div>													
+																								</div>                 
+<!-- End Content Slider -->
+        
+    
+        
+    <!-- Section About -->
+    <section class="probootstrap_section" id="about"
+    style="padding: 1em 0 0 0 !important;">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-12 text-center mb-5 probootstrap-animate">
+            <h2 id="about" class="display-4 border-bottom probootstrap-section-heading">About</h2>
+            <blockquote class="">
+              <p class="lead mb-4"><em>Is a GIS-based mapping tool designed to help policy analysts and policymakers access and use high quality and highly disaggregated data on agricultural, socio-economic, and bio-physical indicators to guide agricultural policy and investment decisions.</em></p>
+            <!--
+              <p class="lead mb-4">
+                <img src="images/SchemaOK.jpg" style="    display: block;height: auto;max-width: 100%;" class="img-responsive" >
+              </p>
+            -->
+            </blockquote>
+
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- END section -->
+
+        
+        
+    <!-- Section Guide -->
+    <section class="probootstrap_section bg-light" id="guide" >
+      <div class="container">
+        <div class="row text-center mb-5 probootstrap-animate">
+          <div class="col-md-12">
+            <h2 class="display-4 border-bottom probootstrap-section-heading">Guide</h2>
+               <blockquote class="">
+              <p class="lead mb-4"><em>This tutorial will guide you through the ReSAKSS Country eAtlases (RCeA).</em></p>
+              <p class="probootstrap-author">
+
+                  <div class="embed-responsive embed-responsive-16by9">
+    <video class="embed-responsive-item" controls src="new%20eAtlas%20V3.mp4" au></video>
+  </div>
+                  
+                  
+              </p>
+            </blockquote>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- END section -->
+        
+    
+    <!-- Section Team 
+    <section  class="probootstrap_section" id="team">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-12 text-center mb-5 probootstrap-animate">
+            <h2 class="display-4 border-bottom probootstrap-section-heading">Team</h2>
+            <blockquote class="">
+              <p class="lead mb-4"><em>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</em></p>
+              <p class="probootstrap-author">
+                <a href="https://probootstrap.com/" target="_blank">
+                  <img src="assets/images/person_1.jpg" alt="Free Template by ProBootstrap.com" class="rounded-circle">
+                  <span class="probootstrap-name">James Smith</span>
+                  <span class="probootstrap-title">Chief Executive Officer</span>
+                </a>
+              </p>
+            </blockquote>
+
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- END section -->
+
+        
+        
+    <!-- Section News -->
+    <section id="news" class="probootstrap_section" style="padding:7em 0 3.5em 0 !important;">
+      <div class="container">
+        <div class="row text-center mb-5 probootstrap-animate">
+          <div class="col-md-12">
+            <h2  class="display-4 border-bottom probootstrap-section-heading">News</h2>
+          </div>
+        </div>
+        <!--
+        <div class="row">
+          <div class="col-md-6">
+
+            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate opac" style="height:486px !important;background: #89a52759;">
+              <div class="probootstrap-media-image grow" style="background-image: url(assets/images/blog/resakss-country-eatlases-focal-points-from-all-over-africa-gather-in-dakar-to-discuss-new-version-of-eatlas-and-their-2018-roadmap-11-16-17.jpg)">
+              </div>
+              <div class="media-body">
+                <span class="text-uppercase">November 17th 2017</span>
+                <h5 class="mb-3" style="font-weight:bold !important;">RESAKSS COUNTRY EATLASES WORKSHOP</h5>
+                <p style="color: black !important;">A ReSAKSS Country eAtlases workshop was held from 17-18 October 2017 in Dakar, Senegal. The workshop was an opportunity to introduce the new version of the ReSAKSS Country eAtlases and its associat ...</p>
+                <p><a href="#" style="color:#0088AF;">Read More</a></p>
+              </div>
+            </div>
+
+            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate opac"
+                 style="height:486px !important;background: #89a52759;">
+              <div class="probootstrap-media-image grow" style="background-image: url(assets/images/blog/new-version-of-the-resakss-country-eatlases-rcea-for-better-tracking-of-indicators-09-05-17.jpg)">
+              </div>
+              <div class="media-body">
+                <span class="text-uppercase">September 5th 2018</span>
+                <h5 class="mb-3"  style="font-weight:bold !important;">NEW VERSION OF THE EATLAS FOR BETTER TRACKING OF INDICATORS</h5>
+                <p style="color: black !important;">The ReSAKSS Country eAtlases (RCeA), the go-to interactive web-based geographic information system for policymakers, analysts, and other stakeholders in Africa has been given a brand-new look. The ...</p>
+                <p><a href="#" style="color:#0088AF;">Read More</a></p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            
+            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate opac"
+                style="height:486px !important;
+                       background: #89a52759;">
+              <div class="probootstrap-media-image grow" style="background-image: url(assets/images/blog/des-outils-de-connaissance-pour-eclairer-la-prise-de-decisions-07-25-17.JPG)">
+              </div>
+              <div class="media-body">
+                <span class="text-uppercase">July 25th 2017</span>
+                <h5 class="mb-3"  style="font-weight:bold !important;">DES OUTILS DE CONNAISSANCE POUR ÉCLAIRER LA PRISE DE DÉCISIONS</h5>
+                <p style="color: black !important;">Du 29 au 30 juin dernier se tenait à l’hôtel Faidherbe, l’« atelier de haut niveau de validation de l’accord de coopération du comité régional ...</p>
+                <p><a href="#" style="color:#0088AF;">Read More</a></p>
+              </div>
+            </div>
+
+            <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate opac"
+                 style="height:486px !important;background: #89a52759;">
+              <div class="probootstrap-media-image grow" style="background-image: url(assets/images/blog/resakss-launches-its-cutting-edge-tools-for-monitoring-caadp-performance-at-the-13th-caadp-partnership-platform-caadp-pp-in-kampala-06-16-17.jpg)">
+              </div>
+              <div class="media-body">
+                <span class="text-uppercase">June 16th 2017</span>
+                <h5 class="mb-3"  style="font-weight:bold !important;">RESAKSS LAUNCHES ITS CUTTING-EDGE TOOLS FOR MONITORING CAADP PERFORMANCE</h5>
+                <p style="color: black !important;">Ahead of the CAADP PP Meeting, on May 31, ReSAKSS hosted a side event on the: “Contribution of Climate-Smart Agriculture to Meeting Malabo Goals”. The event ...</p>
+                <p><a href="#" style="color:#0088AF;">Read More</a></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+       <div class="row text-center  probootstrap-animate">
+          <div class="col-md-12">
+            <h2  class="display-4 probootstrap-section-heading">
+              
+                 <a class="button"
+                href="http://eatlas.resakss.org/news.html"><svg><g><line x2="227.62" y1="31.28" y2="31.28"></line><polyline points="222.62 25.78 228.12 31.28 222.62 36.78"></polyline><circle cx="224.67" cy="30.94" r="30.5" transform="rotate(180 224.67 30.94) scale(1, -1) translate(0, -61)"></circle></g></svg><font>All news</font></a>
+            </h2>
+          </div>
+      </div>    
+         
+          -->
+          
+          
+          
+      </div>
+    </section>
+    <!-- END section -->
+
+    
+<!-- Section Contact -->
+  <section id="contact" class="probootstrap_section bg-light">
+      <div class="container">
+        <div  style="margin-bottom: 1rem !important;" class="row text-center mb-5 probootstrap-animate">
+          <div class="col-md-12">
+            <h2 class="display-4 border-bottom probootstrap-section-heading">Contact</h2>
+          </div>
+        </div>
+          
+      
+            <blockquote class="" style="width: 80%;margin:auto;">
+              <p class="probootstrap-author" style="width: 80%;
+    margin: auto;text-align: center;margin-bottom: 50px">
+                  <img src="assets/images/2.jpg" alt="Free Template by ProBootstrap.com" class="rounded-circle"  style="    width: 70px;
+    margin-bottom: 10px;">
+                  <span class="probootstrap-name" style="    font-size: 12px;text-transform: uppercase;
+letter-spacing: .2em;color: #000;font-weight: 700;display: block;">Abd Salam El Vilaly, Ph.D.</span>
+                  <span style="display: block;color:#007e2f;" class="probootstrap-title">Senior GIS Coordinator (IFPRI)</span>
+                 <a href="mailto:a.s.elvilaly@cgiar.org" >
+                  <span style="display: block;color:#619de5;" class="probootstrap-title"><i class="fa fa-envelope" aria-hidden="true"></i>
+a.s.elvilaly@cgiar.org</span>
+                </a>
+              </p>
+            </blockquote>
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+         <div class="row">
+          <div class="col-md-6 probootstrap-animate">
+            <p class="mb-5"><iframe style="border: none;
+    width: 100%; height: 487px;border:1px dashed #f29c335c" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=International+Food+Policy+Research+Institute&amp;aq=&amp;sll=14.7354168,-17.5097754,17&amp;sspn=14.7354168,-17.5097754,17&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=14.7354168,-17.5097754,17&amp;spn=0.006295,0.006295&amp;t=m&amp;iwloc=A&amp;output=embed"></iframe>
+									</p>
+            <div class="row">
+                
+            </div>
+          </div>
+          <div class="col-md-6  probootstrap-animate">
+            <form style="border:1px dashed #f29c335c;" action="#" method="post" class="probootstrap-form probootstrap-form-box mb60">
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="fname" class="sr-only sr-only-focusable">First Name</label>
+                    <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="lname" class="sr-only sr-only-focusable">Last Name</label>
+                    <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email" class="sr-only sr-only-focusable">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="message" class="sr-only sr-only-focusable">Message</label>
+                <textarea cols="30" rows="10" class="form-control" id="message" name="message" placeholder="Write your message"></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" class="btn btn-primary" style="background-color: #f29c33;border-color:#f29c33;" id="submit" name="submit" value="Send Message">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+
+    <!-- Footer -->
+    <footer class="probootstrap_section probootstrap-border-top" style="background: #353b2a;padding: 2em 0 0 0 !important;">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-3">
+            <h3 style="color:#f29c33;" class="probootstrap_font-18 mb-3">eAtlas</h3>
+            <ul class="list-unstyled">
+              <li><a style="color:white;" href="#about">About</a></li>
+              <li><a style="color:white;" href="#guide">Guide</a></li>
+              <li><a style="color:white;" href="http://eatlas.resakss.org/teams.html" >Team</a></li>
+              <li><a style="color:white;" href="http://eatlas.resakss.org/news.html" >News</a></li>
+              <li><a style="color:white;" href="#contact">Contact</a></li>  
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3 style="color:#f29c33;" class="probootstrap_font-18 mb-3">ReSAKSS</h3>
+            <ul class="list-unstyled">
+              <li><a style="color:white;" href="http://www.resakss.org/node/3397" >About</a></li>
+              <li><a style="color:white;" href="http://www.resakss.org/blog/aw" >Blog</a></li>
+              <li><a style="color:white;" href="http://conference.resakss.org/" >Annual Conference</a></li>
+              <li><a style="color:white;" href="http://www.resakss.org/newsletter/aw" >Newsletter</a></li>
+            </ul>
+          </div>
+             <div class="col-md-2">
+            
+            <ul class="list-unstyled">
+              <li><a href="http://ifpri.org">
+            <img src="assets/images/ifpri-white.png"
+                width="130" height="75"/></a></li>
+            </ul>
+                 
+          </div>
+            
+         <div class="col-md-2">
+            
+            <ul class="list-unstyled">
+              <li><a title="African Union Commission(AUC)" href="https://au.int/en/organs/commission">
+            <img src="assets/images/african-union.png"
+                width="130" height="80"/></a></li>
+            </ul>
+                 
+          </div>    
+            
+        <div class="col-md-2">
+            
+            <ul class="list-unstyled">
+              <li><a title="NEPAD Planning and Coordinating Agency (NPCA)" href="http://nepad.org">
+            <img src="assets/images/NEPAD.png"
+                width="130" height="75"/></a></li>
+            </ul>
+                 
+          </div>
+            
+    
+            
+            
+          <!-- Back to top -->
+	       <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+         
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Bootstrap JS Files -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Around Slider -->
+    <script src="js/jquery.content_slider.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.animate-colors.js"></script>
+    <script src="js/additional_content.js"></script>
+    <!-- CSSMap SCRIPT -->
+    <script src="assets/js/jquery.cssmap.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+
+    // CSSMap;
+    $("#map-africa").CSSMap({
+      "size": 1450,
+      "cities:":true,
+      "activateOnLoad": ["afr3", "afr5", "afr6",
+"afr7", "afr14", "afr15","afr20", "afr23", "afr26",
+"afr32", "afr33", "afr38","afr40", "afr41", "afr43",
+"afr46", "afr52", "afr55","afr56", "afr57","afr58","afr59"]
+
+        
+    });
+
+    //Back To Top
+     if ($('#back-to-top').length) {
+        var scrollTrigger = 100, // px
+            backToTop = function () {
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > scrollTrigger) {
+                    $('#back-to-top').addClass('show');
+                } else {
+                    $('#back-to-top').removeClass('show');
+                }
+            };
+        backToTop();
+        $(window).on('scroll', function () {
+            backToTop();
+        });
+        $('#back-to-top').on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 700);
+        });}
+    
+    
+          // All Around Slider 
+            
+    		var image_array = new Array();
+					image_array = [
+														{image: "content/our_map/Benin.jpg", link_url: "/Benin/en"},
+						
+												{image: "content/our_map/Burkina Faso.jpg", link_url: "/Burkina-faso/en"},
+						
+												{image: "content/our_map/Burundi.jpg", link_url: "/Burundi/en"},
+						
+												{image: "content/our_map/Cameroon.jpg", link_url: "/Cameroon/en"},
+						
+												{image: "content/our_map/D.R Congo.jpg", link_url: "/D.R-Congo/en"},
+						
+												{image: "content/our_map/Ethiopia.jpg", link_url: "/Ethiopia/en"},
+						
+												{image: "content/our_map/Ghana.jpg", link_url: "/Ghana/en"},
+						
+												{image: "content/our_map/Côte d'Ivoire.jpg", link_url: "/civ/en"},
+						
+												{image: "content/our_map/Kenya.jpg", link_url: "/Kenya/en"},
+						
+												{image: "content/our_map/Malawi.jpg", link_url: "/Malawi/en"},
+						
+												{image: "content/our_map/Mali.jpg", link_url: "/Mali/en"},
+						
+												{image: "content/our_map/Mozambique.jpg", link_url: "/Mozambique/en"},
+						
+												{image: "content/our_map/Niger.jpg", link_url: "/Niger/en"},
+						
+												{image: "content/our_map/Nigeria.jpg", link_url: "/Nigeria/en"},
+						
+												{image: "content/our_map/Rwanda.jpg", link_url: "/Rwanda/en"},
+						
+												{image: "content/our_map/Senegal.jpg", link_url: "/Senegal/en"},
+						
+												{image: "content/our_map/Tanzania.jpg", link_url: "/Tanzania/en"},
+						
+												{image: "content/our_map/Togo.jpg", link_url: "/Togo/en"},
+						
+												{image: "content/our_map/Tunisia.jpg", link_url: "/Tunisia/en"},
+						
+												{image: "content/our_map/Uganda.jpg", link_url: "/Uganda/en"},
+						
+												{image: "content/our_map/Zambia.jpg", link_url: "/Zambia/en"},
+						
+												{image: "content/our_map/South Sudan.jpg", link_url: "/South-Sudan/en"},
+						
+						
+					];
+					$('#slider1').content_slider({		// bind plugin to div id="slider1"
+						map : image_array,				// pointer to the image map
+						max_shown_items: 7,				// number of visible circles
+						hv_switch: 0,					// 0 = horizontal slider, 1 = vertical
+						active_item: 5,					// layer that will be shown at start, 0=first, 1=second...
+						wrapper_text_max_height: 280,	// height of widget, displayed in pixels
+						middle_click: 1,				// when main circle is clicked: 1 = slider will go to the previous layer/circle, 2 = to the next
+						under_600_max_height: 1200,		// if resolution is below 600 px, set max height of content
+						border_radius:	-1,				// -1 = circle, 0 and other = radius
+						automatic_height_resize: 1,
+						border_on_off: 0,
+						enable_mousewheel: 0,
+						allow_shadow: 0
+					});
+});
+        
+       
+</script>
+       
+	</body>
+</html>
