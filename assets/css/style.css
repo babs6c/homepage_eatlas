@@ -49,7 +49,7 @@ a {
   padding: 7em 0; }
   .probootstrap-cover .overlay {
     position: absolute;
-    background: /*rgba(0, 0, 0, 0.5)*/rgba(0, 0, 0, 0.32);
+    background: /*rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.32)#3B4835*/
     top: 0;
     left: 0;
     right: 0;
@@ -106,13 +106,13 @@ a {
   width: 100%; }
   @media (max-width: 991px) {
     .probootstrap_navbar {
-      background: /*rgba(0, 0, 0, 0.6)*/ #f39c12; } }
+      background: /*rgba(0, 0, 0, 0.6) #f39c12*/ #f39c12a6; } }
   .probootstrap_navbar .nav-item .nav-link {
     padding: 1.6em 1em;
     font-size: /*12px*/.875rem;
     text-transform: uppercase;
     letter-spacing: .1em;
-    font-weight: 400; }
+    font-weight: 450; }
     @media (max-width: 991px) {
       .probootstrap_navbar .nav-item .nav-link {
         padding: .5em 0; } }
@@ -178,7 +178,7 @@ a {
     color: #b3b3b3; }
 
 #guide {
-  border-top: 1px solid #e6e6e6; }
+/*border-top: 1px solid #e6e6e6;*/ }
 
 .probootstrap-thumbnail {
   position: relative;
@@ -315,7 +315,7 @@ a {
         top: 0; } }
 
 .probootstrap-border-top {
-  border-top: 1px solid #ECECEC; }
+/*  border-top: 1px solid #ECECEC;*/ }
 
 @media (max-width: 991px) {
   .probootstrap-section-heading {
@@ -582,3 +582,17 @@ a {
 #back-to-top.show {
     opacity: 1;
 }
+
+
+
+
+
+@media (max-width: 667px) {
+  .probootstrap-cover {
+    height:900px;
+ } }
+
+ @media (max-width: 2000px) {
+   .probootstrap-cover {
+     height:712px;
+  } }

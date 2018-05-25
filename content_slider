@@ -1,0 +1,178 @@
+<!-- <div class="content_slider_wrapper margin-top12" id="slider1">
+																																												<div class="circle_slider_text_wrapper" id="sw0" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Bénin</h3><br /><br />
+<span class="interactivemaps" ><a href="Benin/en">Launch Interactive Maps</a></span><br /><br /></div>
+</div>
+
+
+																																												<div class="circle_slider_text_wrapper" id="sw1" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Burkina Faso</h3><br /><br />
+<span class="interactivemaps" ><a href="Burkina-faso/en">Launch Interactive Maps</a></span><br /><br /></div>
+</div>
+
+																																												<div class="circle_slider_text_wrapper" id="sw2" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Burundi</h3><br /><br />
+<span class="interactivemaps" ><a href="Burundi/en">Launch Interactive Maps</a></span><br /><br /></div>				</div>
+
+																																												<div class="circle_slider_text_wrapper" id="sw3" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Cameroon</h3><br /><br />
+<span class="interactivemaps" ><a href="Cameroon/en">Launch Interactive Maps</a></span><br /><br /></div>
+</div>
+
+																																												<div class="circle_slider_text_wrapper" id="sw4" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>D.R Congo</h3><br /><br />
+<span class="interactivemaps" ><a href="D.R-Congo/en">Launch Interactive Maps</a></span><br /><br /></div>
+</div>
+
+																																												<div class="circle_slider_text_wrapper" id="sw5" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Ethiopia</h3><br /><br />
+<span class="interactivemaps" ><a href="Ethiopia/en">Launch Interactive Maps</a></span><br /><br /></div>
+</div>
+
+																																												<div class="circle_slider_text_wrapper" id="sw6" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Ghana</h3><br /><br />
+<span class="interactivemaps" ><a href="Ghana/en">Launch Interactive Maps</a></span><br /><br /></div>
+</div>
+
+																																												<div class="circle_slider_text_wrapper" id="sw7" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Côte d'Ivoire</h3><br /><br />
+<span class="interactivemaps" ><a href="civ/en">Launch Interactive Maps</a></span><br /><br /></div>
+</div>
+
+																																												<div class="circle_slider_text_wrapper" id="sw8" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Kenya</h3><br /><br />
+<span class="interactivemaps" ><a href="Kenya/en">Launch Interactive Maps</a></span><br /><br /></div>
+</div>
+
+																																												<div class="circle_slider_text_wrapper" id="sw9" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Malawi</h3><br /><br />
+<span class="interactivemaps" ><a href="Malawi/en">Launch Interactive Maps</a></span><br /><br />
+</div>
+</div>
+
+																																												<div class="circle_slider_text_wrapper" id="sw10" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Mali</h3><br /><br />
+<span class="interactivemaps" ><a href="Mali/en">Launch Interactive Maps</a></span><br /><br />
+</div>
+</div>
+
+																																												<div class="circle_slider_text_wrapper" id="sw11" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Mozambique</h3><br /><br />
+<span class="interactivemaps" ><a href="Mozambique/en">Launch Interactive Maps</a></span><br /><br /></div>
+</div>
+
+																																												<div class="circle_slider_text_wrapper" id="sw12" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Niger</h3><br /><br />
+<span class="interactivemaps" ><a href="Niger/en">Launch Interactive Maps</a></span><br /><br /></div>
+</div>
+
+																																												<div class="circle_slider_text_wrapper" id="sw13" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Nigeria</h3><br /><br />
+<span class="interactivemaps" ><a href="Nigeria/en">Launch Interactive Maps</a></span><br /><br /></div>
+</div>
+
+																																												<div class="circle_slider_text_wrapper" id="sw14" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Rwanda</h3><br /><br />
+<span class="interactivemaps" ><a href="Rwanda/en">Launch Interactive Maps</a></span><br /><br /></div>
+</div>
+
+																																												<div class="circle_slider_text_wrapper" id="sw15" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Senegal</h3><br /><br />
+<span class="interactivemaps" ><a href="Senegal/en">Launch Interactive Maps</a></span><br /><br /></div>
+</div>
+
+																																												<div class="circle_slider_text_wrapper" id="sw16" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Tanzania</h3><br /><br />
+<span class="interactivemaps" ><a href="Tanzania/en">Launch Interactive Maps</a></span><br /><br /></div>
+</div>
+																																								<div class="circle_slider_text_wrapper" id="sw17" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Togo</h3><br /><br />
+<span class="interactivemaps" ><a href="Togo/en">Launch Interactive Maps</a></span><br /><br /></div>
+</div>
+																																<div class="circle_slider_text_wrapper" id="sw18" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Tunisia</h3><br /><br />
+<span class="interactivemaps" ><a href="Tunisia/en">Launch Interactive Maps</a></span><br /><br /></div>
+</div>
+
+																																												<div class="circle_slider_text_wrapper" id="sw19" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Uganda</h3><br /><br />
+<span class="interactivemaps" ><a href="Uganda/en">Launch Interactive Maps</a></span><br /><br />
+</div>
+</div>
+
+																																												<div class="circle_slider_text_wrapper" id="sw20" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>Zambia</h3><br /><br />
+<span class="interactivemaps" ><a href="Zambia/en">Launch Interactive Maps</a></span><br /><br /></div>
+</div>
+
+																																												<div class="circle_slider_text_wrapper" id="sw21" style="display: none;">
+<!-- content for the third layer, id="sw0" -->
+<div class="content_slider_text_block_wrap">
+<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+<h3>South Sudan</h3><br /><br />
+<span class="interactivemaps" ><a href="South-Sudan/en">Launch Interactive Maps</a></span><br /><br /></div>
+</div>
+																								</div> -->
